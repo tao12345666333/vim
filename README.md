@@ -4,7 +4,7 @@
 
 在终端内执行如下命令即可：
 
-'wget -qO- https://github.com/tao12345666333/vim/blob/master/setup.sh | sh -x'
+`wget -qO- https://github.com/tao12345666333/vim/blob/master/setup.sh | sh -x`
 
 ### 手动安装
 
