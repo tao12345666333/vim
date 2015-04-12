@@ -1,5 +1,9 @@
 ## vim 配置
 
+### 截图
+
+![screenshot.png](screenshot.png)
+
 ### 自动安装
 
 在终端内执行如下命令即可：
