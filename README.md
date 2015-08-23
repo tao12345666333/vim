@@ -1,27 +1,24 @@
-## vim 配置
+## My Vim setting
 
-### 截图
+### screenshot
 
 ![screenshot.png](screenshot.png)
 
-### 自动安装
+### Install
+(You need a vim compiled with python support. Check it with `vim --version | grep +python`)
 
-在终端内执行如下命令即可：
+* **Dependencies**(Ubuntu platform)
 
-`wget -qO- https://raw.githubusercontent.com/tao12345666333/vim/master/setup.sh | sh -x`
+    `sudo apt-get install vim exuberant-ctags git`
 
-### 手动安装
+    `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
 
-1. 安装vim `sudo apt-get install vim`
-- 安装ctags：`sudo apt-get install ctags`
-- 安装一些必备程序：`sudo apt-get install python-twisted xclip vim-gnome astyle python-setuptools`
-- python代码格式化工具：`sudo easy_install -ZU autopep8`
-- `sudo ln -s /usr/bin/ctags /usr/local/bin/ctags`
-- clone配置文件：`cd ~/ && git clone git@github.com:tao12345666333/vim.git`
-- `mv ~/vim ~/.vim`
-- `mv ~/.vim/.vimrc ~/`
-- clone bundle 程序：`git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
-- 打开vim并执行bundle程序`:BundleInstall`
-- 重新打开vim即可看到效果
+* **Download vimrc file to user home directory**
 
+    `wget https://raw.githubusercontent.com/tao12345666333/vim/master/.vimrc -O $HOME/.vimrc`
 
+* **Open Vim**
+
+    Open vim, it will install plugins. Wait for the installation to finish.
+
+* **Enjoy your Vim and costomize it**
