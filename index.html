@@ -5,7 +5,7 @@
     <title>Vim by tao12345666333</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -20,43 +20,38 @@
 
     <section class="main-content">
       <h2>
-<a id="vim-配置" class="anchor" href="#vim-%E9%85%8D%E7%BD%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>vim 配置</h2>
+<a id="my-vim-setting" class="anchor" href="#my-vim-setting" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Vim setting</h2>
 
 <h3>
-<a id="截图" class="anchor" href="#%E6%88%AA%E5%9B%BE" aria-hidden="true"><span class="octicon octicon-link"></span></a>截图</h3>
+<a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>screenshot</h3>
 
-<p><img src="screenshot.png" alt="screenshot.png"></p>
-
-<h3>
-<a id="自动安装" class="anchor" href="#%E8%87%AA%E5%8A%A8%E5%AE%89%E8%A3%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>自动安装</h3>
-
-<p>在终端内执行如下命令即可：</p>
-
-<p><code>wget -qO- https://raw.githubusercontent.com/tao12345666333/vim/master/setup.sh | sh -x</code></p>
+<p><img src="https://raw.githubusercontent.com/tao12345666333/vim/master/screenshot.png" alt="screenshot.png"></p>
 
 <h3>
-<a id="手动安装" class="anchor" href="#%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85" aria-hidden="true"><span class="octicon octicon-link"></span></a>手动安装</h3>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h3>
 
-<ol>
-<li>安装vim <code>sudo apt-get install vim</code>
+<p>(You need a vim compiled with python support. Check it with <code>vim --version | grep +python</code>)</p>
+
+<ul>
+<li>
+<p><strong>Dependencies</strong>(Ubuntu platform)</p>
+
+<p><code>sudo apt-get install vim exuberant-ctags git</code></p>
+
+<p><code>sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort</code></p>
 </li>
-<li>安装ctags：<code>sudo apt-get install ctags</code>
+<li>
+<p><strong>Download vimrc file to user home directory</strong></p>
+
+<p><code>wget https://raw.githubusercontent.com/tao12345666333/vim/master/.vimrc -O $HOME/.vimrc</code></p>
 </li>
-<li>安装一些必备程序：<code>sudo apt-get install python-twisted xclip vim-gnome astyle python-setuptools</code>
+<li>
+<p><strong>Open Vim</strong></p>
+
+<p>Open vim, it will install plugins. Wait for the installation to finish.</p>
 </li>
-<li>python代码格式化工具：<code>sudo easy_install -ZU autopep8</code>
-</li>
-<li><code>sudo ln -s /usr/bin/ctags /usr/local/bin/ctags</code></li>
-<li>clone配置文件：<code>cd ~/ &amp;&amp; git clone git@github.com:tao12345666333/vim.git</code>
-</li>
-<li><code>mv ~/vim ~/.vim</code></li>
-<li><code>mv ~/.vim/.vimrc ~/</code></li>
-<li>clone bundle 程序：<code>git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle</code>
-</li>
-<li>打开vim并执行bundle程序<code>:BundleInstall</code>
-</li>
-<li>重新打开vim即可看到效果</li>
-</ol>
+<li><p><strong>Enjoy your Vim and costomize it</strong></p></li>
+</ul>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/tao12345666333/vim">Vim</a> is maintained by <a href="https://github.com/tao12345666333">tao12345666333</a>.</span>
@@ -72,11 +67,10 @@
           </script>
           <script type="text/javascript">
             try {
-              var pageTracker = _gat._getTracker("UA-50163692-1");
+              var pageTracker = _gat._getTracker("UA-50163692-2");
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
 
   </body>
 </html>
-
