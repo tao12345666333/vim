@@ -102,6 +102,10 @@ Bundle 'matchit.zip'
 Bundle 'Wombat'
 " Yank history navigation
 Bundle 'YankRing.vim'
+"javascript complete after install the plugin, you must cd the install
+"directory and run `npm install`, then add a .tern-project config file
+"the doc at http://ternjs.net/doc/manual.html#vim
+Bundle 'marijnh/tern_for_vim'
 
 " ============================================================================
 " Install plugins the first time vim runs
@@ -146,9 +150,9 @@ set encoding=utf-8
 
 
 " tab length exceptions on some file types
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
-autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+"autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+"autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
+"autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 "auto open or close NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
@@ -338,6 +342,8 @@ let g:ctrlp_custom_ignore = {
 nmap <leader>e :Errors<CR>
 " check also when just opened the file
 let g:syntastic_check_on_open = 1
+"syntastic checker for javascript
+let g:syntastic_javascript_checkers = ['jshint']
 " don't put icons on the sign column (it hides the vcs status icons of signify)
 let g:syntastic_enable_signs = 0
 " custom icons (enable them if you use a patched font, and enable the previous 
