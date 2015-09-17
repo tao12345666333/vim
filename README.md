@@ -1,4 +1,5 @@
 ## [My Vim setting](http://tao12345666333.github.com/vim)
+[![Build Status](https://travis-ci.org/tao12345666333/vim.png)](https://travis-ci.org/tao12345666333/vim)
 
 ### screenshot
 
@@ -15,7 +16,7 @@
 
 * **Download vimrc file to user home directory**
 
-    `wget https://raw.githubusercontent.com/tao12345666333/vim/master/.vimrc -O $HOME/.vimrc`
+    `wget https://raw.githubusercontent.com/tao12345666333/vim/master/vimrc -O $HOME/.vimrc`
 
 * **Open Vim**
 
