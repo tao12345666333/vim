@@ -233,9 +233,10 @@ endif
 " when scrolling, keep cursor 3 lines away from screen border
 set scrolloff=3
 
-" autocompletion of files and commands behaves like shell
-" (complete only the common part, list the options that match)
-set wildmode=list:longest
+" autocompletion of files and commands behaves like zsh
+" (autocomplete menu)
+set wildmenu
+set wildmode=full
 
 " better backup, swap and undos storage
 set directory=~/.vim/dirs/tmp     " directory to place swap files in
