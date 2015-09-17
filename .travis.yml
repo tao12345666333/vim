@@ -2,7 +2,7 @@ language: generic
 env:
   - HEAD=yes
   - HEAD=no
-sudo: false
+sudo: true 
 
 addons:
   apt:
@@ -13,7 +13,7 @@ addons:
       - python
 
 install:
-  - pip install dbgp vim-debug pep8 flake8 pyflakes isort
+  - sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
   - bash install.sh
 
 before_script:
