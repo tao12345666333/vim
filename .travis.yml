@@ -4,14 +4,12 @@ env:
   - HEAD=no
 sudo: true 
 
-addons:
-  apt:
-    packages:
-      - vim
-      - git
-      - exuberant-ctags
-      - python
+before_install:
+  - sudo apt-get install -y vim
+  - sudo apt-get install -y git
+  - sudo apt-get install -y exuberant-ctags
+  - sudo apt-get install -y python
+  - sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
 
 install:
-  - sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
   - bash install.sh
