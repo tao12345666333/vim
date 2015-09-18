@@ -15,6 +15,3 @@ addons:
 install:
   - sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
   - bash install.sh
-
-before_script:
-  - easy_install pip
