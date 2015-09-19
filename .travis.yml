@@ -1,14 +1,13 @@
 language: generic
+
 env:
   - HEAD=yes
   - HEAD=no
+
 sudo: true 
 
 before_install:
-  - sudo apt-get install -y vim
-  - sudo apt-get install -y git
-  - sudo apt-get install -y exuberant-ctags
-  - sudo apt-get install -y python
+  - sudo apt-get install -y vim git python exuberant-ctags
   - sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort
 
 install:
