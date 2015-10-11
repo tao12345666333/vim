@@ -23,3 +23,7 @@
     Open vim, it will install plugins. Wait for the installation to finish.
 
 * **Enjoy your Vim and costomize it**
+
+### Usage
+
+* [window switch](https://github.com/t9md/vim-choosewin)
