@@ -106,6 +106,8 @@ Bundle 'YankRing.vim'
 "directory and run `npm install`, then add a .tern-project config file
 "the doc at http://ternjs.net/doc/manual.html#vim
 Bundle 'marijnh/tern_for_vim'
+" Golang Plugins
+Bundle 'fatih/vim-go'
 
 " ============================================================================
 " Install plugins the first time vim runs
