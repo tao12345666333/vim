@@ -1,19 +1,18 @@
 " ============================================================================
 " Vundle initialization
 " Avoid modify this section, unless you are very sure of what you are doing
-" by @fisadev
 
 " no vi-compatible
 set nocompatible
 
-" Setting up Vundle - the vim plugin bundler
+" Setting up Vundle - the best vim plugin manager
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 if !filereadable(vundle_readme)
     echo "Installing Vundle..."
     echo ""
     silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle
     let iCanHazVundle=0
 endif
 
@@ -70,9 +69,9 @@ Bundle 'Shougo/neocomplcache.vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
+Bundle 'garbas/vim-snipmate'
 " awesome colorscheme
 Bundle 'tomasr/molokai'
-Bundle 'garbas/vim-snipmate'
 " Git/mercurial/others diff icons on the side of the file lines
 Bundle 'mhinz/vim-signify'
 " Automatically sort python imports

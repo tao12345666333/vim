@@ -24,6 +24,76 @@
 
 * **Enjoy your Vim and costomize it**
 
-### Usage
+### Featured Plugins
 
-* [window switch](https://github.com/t9md/vim-choosewin)
+* [Vundle](https://github.com/VundleVim/Vundle.vim)
+
+* [vim-debug]()
+
+* [Nerdtree]()
+
+* [Nerdcommenter]()
+
+* [Tagbar]()
+
+* [ctrlp.vim]()
+
+* [vim-ctrlp-cmdpalette]()
+
+* [emmet-vim]()
+
+* [git-vim]()
+
+* [tabman.vim]()
+
+* [vim-airline]()
+
+* [conque-term]()
+
+* [FixedTaskList]()
+
+* [vim-surround]()
+
+* [vim-autoclose]()
+
+* [vim-indent-object]()
+
+* [python-mode]()
+
+* [neocomplcache]()
+
+* [vim-addon-mw-utils]()
+
+* [tlib_vim]()
+
+* [vim-snippets]()
+
+* [vim-snipmate]()
+
+* [molokai]()
+
+* [vim-signify]()
+
+* [vim-isort]()
+
+* [dragvisuals.vim]()
+
+* [vim-choosewin](https://github.com/t9md/vim-choosewin)
+
+* [syntastic]()
+
+* [colorizer]()
+
+* [Indexedsearch]()
+
+* [matchit.zip]()
+
+* [Wombat]()
+
+* [YankRing]()
+
+* [tern_for_vim]()
+
+* [vim-go]()
+
+And more...
