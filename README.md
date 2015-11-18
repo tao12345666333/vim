@@ -96,4 +96,6 @@
 
 * [vim-go]()
 
+* [vim-jsx]()
+
 And more...
