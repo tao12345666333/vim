@@ -107,6 +107,8 @@ Bundle 'YankRing.vim'
 Bundle 'marijnh/tern_for_vim'
 " Golang Plugins
 Bundle 'fatih/vim-go'
+" JSX syntax highlight.
+Bundle 'mxw/vim-jsx'
 
 " ============================================================================
 " Install plugins the first time vim runs
@@ -344,8 +346,12 @@ let g:ctrlp_custom_ignore = {
 nmap <leader>e :Errors<CR>
 " check also when just opened the file
 let g:syntastic_check_on_open = 1
-"syntastic checker for javascript
-let g:syntastic_javascript_checkers = ['jshint']
+" syntastic checker for javascript.
+" eslint is the only tool support JSX.
+" If you don't need write JSX, you can use jshint.
+" And eslint is slow, but not a hindrance
+" let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['eslint']
 " don't put icons on the sign column (it hides the vcs status icons of signify)
 let g:syntastic_enable_signs = 0
 " custom icons (enable them if you use a patched font, and enable the previous 
@@ -482,3 +488,8 @@ function SetTitle()
     endif
 endfunction
 autocmd BufNewFile * normal G
+
+" Vim-jsx ------------------------------
+
+" if you use JSX syntax in .js file, please enable it.
+let g:jsx_ext_required = 0
