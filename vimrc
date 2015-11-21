@@ -109,6 +109,13 @@ Bundle 'marijnh/tern_for_vim'
 Bundle 'fatih/vim-go'
 " JSX syntax highlight.
 Bundle 'mxw/vim-jsx'
+" Markdown syntastic highlight
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
+" Markdown realtime preview
+" Before you want to use it, please run
+" `sudo npm -g install instant-markdown-d`
+Bundle 'suan/vim-instant-markdown'
 
 " ============================================================================
 " Install plugins the first time vim runs
@@ -493,3 +500,22 @@ autocmd BufNewFile * normal G
 
 " if you use JSX syntax in .js file, please enable it.
 let g:jsx_ext_required = 0
+
+" Vim-markdown ------------------------------
+
+" Disabled automatically folding
+let g:vim_markdown_folding_disabled=1
+" LeTeX math
+let g:vim_markdown_math=1
+" Highlight YAML frontmatter
+let g:vim_markdown_frontmatter=1
+
+" Vim-instant-markdown -----------------
+
+" If it taxes your system too much, you can specify
+" let g:instant_markdown_slow = 1
+" if you don't want to manually control it
+" you can open this setting
+" and when you open this, you can manually trigger preview
+" via the command :InstantMarkdownPreview
+" let g:instant_markdown_autostart = 0
