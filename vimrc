@@ -512,7 +512,7 @@ let g:vim_markdown_frontmatter=1
 
 " Vim-instant-markdown -----------------
 
-" If it taxes your system too much, you can specify
+" If it takes your system too much, you can specify
 " let g:instant_markdown_slow = 1
 " if you don't want to manually control it
 " you can open this setting
