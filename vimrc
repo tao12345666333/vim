@@ -101,9 +101,9 @@ Bundle 'matchit.zip'
 Bundle 'Wombat'
 " Yank history navigation
 Bundle 'YankRing.vim'
-"javascript complete after install the plugin, you must cd the install
-"directory and run `npm install`, then add a .tern-project config file
-"the doc at http://ternjs.net/doc/manual.html#vim
+" javascript complete after install the plugin, you must cd the install
+" directory and run `npm install`, then add a .tern-project config file
+" the doc at http://ternjs.net/doc/manual.html#vim
 Bundle 'marijnh/tern_for_vim'
 " Golang Plugins
 Bundle 'fatih/vim-go'
@@ -160,11 +160,11 @@ set encoding=utf-8
 
 
 " tab length exceptions on some file types
-"autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
-"autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
-"autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+" autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+" autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
+" autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
-"auto open or close NERDTree
+" auto open or close NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -313,7 +313,7 @@ let g:vim_debug_disable_mappings = 1
 
 " file finder mapping
 let g:ctrlp_map = ',e'
-"hidden some types files
+" hidden some types files
 let g:ctrlp_show_hidden = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.png,*.jpg,*.gif           "Linux
 " tags (symbols) in current file finder mapping
@@ -460,13 +460,13 @@ let g:airline#extensions#whitespace#enabled = 1
 if !exists('g:airline_symbols')
    let g:airline_symbols = {}
 endif
-"let g:airline_left_sep = '⮀'
-"let g:airline_left_alt_sep = '⮁'
-"let g:airline_right_sep = '⮂'
-"let g:airline_right_alt_sep = '⮃'
-"let g:airline_symbols.branch = '⭠'
-"let g:airline_symbols.readonly = '⭤'
-"let g:airline_symbols.linenr = '⭡'
+" let g:airline_left_sep = '⮀'
+" let g:airline_left_alt_sep = '⮁'
+" let g:airline_right_sep = '⮂'
+" let g:airline_right_alt_sep = '⮃'
+" let g:airline_symbols.branch = '⭠'
+" let g:airline_symbols.readonly = '⭤'
+" let g:airline_symbols.linenr = '⭡'
 
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
