@@ -21,6 +21,9 @@
 * **Open Vim**
 
     Open vim, it will install plugins. Wait for the installation to finish.
+    Or you can run
+
+    `vim -E -u $HOME/.vimrc +qall`
 
 * **Enjoy your Vim and costomize it**
 
