@@ -1,11 +1,13 @@
-## [My Vim setting](http://tao12345666333.github.com/vim)
+# [My Vim setting](http://tao12345666333.github.com/vim)
 [![Build Status](https://travis-ci.org/tao12345666333/vim.png)](https://travis-ci.org/tao12345666333/vim)
 
-### screenshot
+## [中文说明](README-zh.md)
+
+## screenshot
 
 ![screenshot.png](screenshot.png)
 
-### Install
+## Install
 (You need a vim compiled with python support. Check it with `vim --version | grep +python`)
 
 * **Dependencies**(Ubuntu platform)
@@ -27,7 +29,7 @@
 
 * **Enjoy your Vim and costomize it**
 
-### Featured Plugins
+## Featured Plugins
 
 * [Vundle](https://github.com/VundleVim/Vundle.vim)
 
