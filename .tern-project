@@ -1,0 +1,13 @@
+{
+    "defs": [
+        "browser",
+        "ecma5",
+        "ecma6"
+    ],
+    "dontLoad": [
+        "static/src/node_modules/**"
+    ],
+    "plugins": {
+        "node": true
+    }
+}
