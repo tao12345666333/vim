@@ -49,7 +49,8 @@ Bundle 'motemen/git-vim'
 " Tab list panel
 Bundle 'kien/tabman.vim'
 " Airline
-Bundle 'bling/vim-airline'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 " Consoles as buffers
 Bundle 'rosenfeld/conque-term'
 " Pending tasks list
