@@ -117,6 +117,8 @@ Bundle 'plasticboy/vim-markdown'
 " Before you want to use it, please run
 " `sudo npm -g install instant-markdown-d`
 Bundle 'suan/vim-instant-markdown'
+" Handlebars syntax highlighting
+Bundle 'mustache/vim-mustache-handlebars'
 
 " ============================================================================
 " Install plugins the first time vim runs
