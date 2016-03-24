@@ -44,8 +44,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
 Bundle 'mattn/emmet-vim'
-" Git integration
-Bundle 'motemen/git-vim'
+" Maybe the best Git integration
+Bundle 'tpope/vim-fugitive'
 " Tab list panel
 Bundle 'kien/tabman.vim'
 " Airline
