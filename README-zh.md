@@ -1,16 +1,18 @@
-## [我的Vim配置](http://tao12345666333.github.com/vim)
+# [我的Vim配置](http://tao12345666333.github.com/vim)
 [![Build Status](https://travis-ci.org/tao12345666333/vim.png)](https://travis-ci.org/tao12345666333/vim)
 
-### 截图
+## 截图
 
 ![screenshot.png](screenshot.png)
 
-### 安装
+## 安装
 (你需要一个有Python支持的Vim版本. 请使用 `vim --version | grep +python` 来检查)
 
-* **依赖**(Ubuntu 平台)
+* **依赖**(Debian/Ubuntu 平台)
 
-    `sudo apt-get install vim exuberant-ctags git`
+    `sudo apt-get remove python`
+
+    `sudo apt-get install python vim exuberant-ctags git`
 
     `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
 
@@ -26,14 +28,14 @@
 
 * **享受你的Vim并个性化它吧**
 
-### 支持特性
+## 支持特性
 
 * 文件浏览
 * Git支持
 * 语法检查
 * Python 支持
+* 超强自动补全
 
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tao12345666333/vim/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
