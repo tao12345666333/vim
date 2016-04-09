@@ -34,6 +34,41 @@
 
 在这份配置中，使用了[**Vundle**](https://github.com/VundleVim/Vundle.vim)作为插件管理器. Vundle会自动接管 `.vim` 文件夹，所以在使用之前请确保 `.vim` 文件夹干净. Vundle的插件安装需要触发 `git clone` 操作，搜索需要 `curl` 支持.
 
+#### 配置
+
+```vim
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" ============================================================================
+" Active plugins
+" You can disable or add new ones here:
+
+" Plugins from github repos:
+
+" Python and PHP Debugger
+Bundle 'fisadev/vim-debug.vim'
+" Better file browser
+Bundle 'scrooloose/nerdtree'
+" Code commenter
+Bundle 'scrooloose/nerdcommenter'
+" Class/module browser
+Bundle 'majutsushi/tagbar'
+" Code and files fuzzy finder
+Bundle 'kien/ctrlp.vim'
+" Extension to ctrlp, for fuzzy command finder
+Bundle 'fisadev/vim-ctrlp-cmdpalette'
+" Zen coding
+Bundle 'mattn/emmet-vim'
+" Git integration
+Bundle 'motemen/git-vim'
+" Tab list panel
+Bundle 'kien/tabman.vim'
+
+```
+
+
 
 
 * 文件浏览
