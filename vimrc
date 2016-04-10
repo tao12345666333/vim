@@ -21,8 +21,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+" let Vundle manage Plugins
+Plugin 'gmarik/vundle'
 
 " ============================================================================
 " Active plugins
@@ -31,102 +31,102 @@ Bundle 'gmarik/vundle'
 " Plugins from github repos:
 
 " Python and PHP Debugger
-Bundle 'fisadev/vim-debug.vim'
+Plugin 'fisadev/vim-debug.vim'
 " Better file browser
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " Code commenter
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 " Class/module browser
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 " Code and files fuzzy finder
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
-Bundle 'fisadev/vim-ctrlp-cmdpalette'
+Plugin 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
-Bundle 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 " Maybe the best Git integration
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 " Tab list panel
-Bundle 'kien/tabman.vim'
+Plugin 'kien/tabman.vim'
 " Airline
-Bundle 'vim-airline/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " Consoles as buffers
-Bundle 'rosenfeld/conque-term'
+Plugin 'rosenfeld/conque-term'
 " Pending tasks list
-Bundle 'fisadev/FixedTaskList.vim'
+Plugin 'fisadev/FixedTaskList.vim'
 " Surround
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 " Autoclose
-Bundle 'Townk/vim-autoclose'
+Plugin 'Townk/vim-autoclose'
 " Indent text object
-Bundle 'michaeljsmith/vim-indent-object'
+Plugin 'michaeljsmith/vim-indent-object'
 " Python mode (indentation, doc, refactor, lints, code checking, motion and
 " operators, highlighting, run and ipdb breakpoints)
-Bundle 'klen/python-mode'
+Plugin 'klen/python-mode'
 " Better autocompletion
-Bundle 'Shougo/neocomplcache.vim'
+Plugin 'Shougo/neocomplcache.vim'
 " Snippets manager (SnipMate), dependencies, and snippets repo
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
 " awesome colorscheme
-Bundle 'tomasr/molokai'
+Plugin 'tomasr/molokai'
 " Git/mercurial/others diff icons on the side of the file lines
-Bundle 'mhinz/vim-signify'
+Plugin 'mhinz/vim-signify'
 " Automatically sort python imports
-Bundle 'fisadev/vim-isort'
+Plugin 'fisadev/vim-isort'
 " Drag visual blocks arround
-Bundle 'fisadev/dragvisuals.vim'
+Plugin 'fisadev/dragvisuals.vim'
 " Window chooser
-Bundle 't9md/vim-choosewin'
+Plugin 't9md/vim-choosewin'
 " Python and other languages code checker
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 " Paint css colors with the real color
-Bundle 'lilydjwg/colorizer'
+Plugin 'lilydjwg/colorizer'
 " Relative numbering of lines (0 is the current line)
 " (disabled by default because is very intrusive and can't be easily toggled
 " on/off. When the plugin is present, will always activate the relative 
 " numbering every time you go to normal mode. Author refuses to add a setting 
 " to avoid that)
-" Bundle 'myusuf3/numbers.vim'
+" Plugin 'myusuf3/numbers.vim'
 
 " Plugins from vim-scripts repos:
 
 " Search results counter
-Bundle 'IndexedSearch'
+Plugin 'IndexedSearch'
 " XML/HTML tags navigation
-Bundle 'matchit.zip'
+Plugin 'matchit.zip'
 " Gvim colorscheme
-Bundle 'Wombat'
+Plugin 'Wombat'
 " Yank history navigation
-Bundle 'YankRing.vim'
+Plugin 'YankRing.vim'
 " javascript complete after install the plugin, you must cd the install
 " directory and run `npm install`, then add a .tern-project config file
 " the doc at http://ternjs.net/doc/manual.html#vim
-Bundle 'marijnh/tern_for_vim'
+Plugin 'marijnh/tern_for_vim'
 " Golang Plugins
-Bundle 'fatih/vim-go'
+Plugin 'fatih/vim-go'
 " JSX syntax highlight.
-Bundle 'mxw/vim-jsx'
+Plugin 'mxw/vim-jsx'
 " Markdown syntastic highlight
-Bundle 'godlygeek/tabular'
-Bundle 'plasticboy/vim-markdown'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 " Markdown realtime preview
 " Before you want to use it, please run
 " `sudo npm -g install instant-markdown-d`
-Bundle 'suan/vim-instant-markdown'
+Plugin 'suan/vim-instant-markdown'
 " Handlebars syntax highlighting
-Bundle 'mustache/vim-mustache-handlebars'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " ============================================================================
 " Install plugins the first time vim runs
 
 if iCanHazVundle == 0
-    echo "Installing Bundles, please ignore key map error messages"
+    echo "Installing Plugins, please ignore key map error messages"
     echo ""
-    :BundleInstall
+    :PluginInstall
 endif
 
 " ============================================================================
@@ -547,4 +547,4 @@ let g:vim_markdown_frontmatter=1
 " you can open this setting
 " and when you open this, you can manually trigger preview
 " via the command :InstantMarkdownPreview
-" let g:instant_markdown_autostart = 0
+let g:instant_markdown_autostart = 0
