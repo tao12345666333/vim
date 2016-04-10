@@ -26,7 +26,7 @@
 
     `vim -E -u $HOME/.vimrc +qall`
 
-* **享受你的Vim并个性化它吧**
+* **享受你的Vim并个性化它吧!**
 
 ## 支持特性
 
@@ -34,10 +34,9 @@
 
 在这份配置中，使用了[**Vundle**](https://github.com/VundleVim/Vundle.vim)作为插件管理器. Vundle会自动接管 `.vim` 文件夹，所以在使用之前请确保 `.vim` 文件夹干净. Vundle的插件安装需要触发 `git clone` 操作，搜索需要 `curl` 支持.
 
-#### 配置
+#### 配置(截取了部分)
 
 ```vim
-
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
@@ -68,10 +67,45 @@ Bundle 'kien/tabman.vim'
 
 ```
 
+#### 支持操作
+
+|      命令             |         解释          |
+|-----------------------|:---------------------:|
+|  :PluginList          |   列出所有Plugin      |
+|  :PluginInstall(!)    |   安装/更新Plugin     |
+|  :PluginSearch(!) foo |  搜索foo相关的Plugin  |
+|  :PluginClean(!)      |  清理未使用的Plugin   |
+|  :PluginUpdate        |      更新插件         |
 
 
+### 文件浏览
 
-* 文件浏览
+在这份配置中, 使用了[**NERDTree**](https://github.com/scrooloose/nerdtree)作为文件浏览器. 你可以在NERDTree中浏览和打开你文件系统中的目录或文件. 还可以进行文件隐藏和过滤, 设置添加书签等. 这份配置中默认过滤掉了`Python`的中间文件.
+
+#### 配置
+
+```vim
+" auto open or close NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" NERDTree -----------------------------
+
+" toggle nerdtree display
+map <F3> :NERDTreeToggle<CR>
+" open nerdtree with the current file selected
+nmap ,t :NERDTreeFind<CR>
+" don;t show these file types
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+```
+
+#### 支持操作
+
+|      快捷键           |         解释               |
+|-----------------------|:--------------------------:|
+|      F3               |   打开/关闭NERDTree        |
+|      ,t               |打开NERDTree并选中当前文件  |
+
 * Git支持
 * 语法检查
 * Python 支持
