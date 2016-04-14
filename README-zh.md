@@ -10,8 +10,6 @@
 
 * **依赖**(Debian/Ubuntu 平台)
 
-    `sudo apt-get remove python`
-
     `sudo apt-get install python vim exuberant-ctags git`
 
     `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`

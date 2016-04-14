@@ -163,9 +163,9 @@ set encoding=utf-8
 
 
 " tab length exceptions on some file types
-" autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
-" autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
-" autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
+ autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+ autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
+ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 " auto open or close NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
