@@ -119,6 +119,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'suan/vim-instant-markdown'
 " Handlebars syntax highlighting
 Plugin 'mustache/vim-mustache-handlebars'
+" Vue.js syntax and highlighting
+Plugin 'tao12345666333/vim-vue'
 
 " ============================================================================
 " Install plugins the first time vim runs
