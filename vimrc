@@ -182,6 +182,8 @@ set incsearch
 set hlsearch
 " search ignore case
 set ignorecase
+" muting search highlighting 
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " syntax highlight on
 syntax on
