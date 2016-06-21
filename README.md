@@ -16,6 +16,14 @@
 
     `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
 
+* **Dependencies**(Mac OS platform)
+
+    `brew install python vim git`
+
+    `wget http://tenet.dl.sourceforge.net/project/ctags/ctags/5.8/ctags-5.8.tar.gz && tar -zxvf ctags-5.8.tar.gz && cd ctags-5.8 && ./configure && make && sudo make install`
+
+    `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
+
 * **Download vimrc file to user home directory**
 
     `wget https://raw.githubusercontent.com/tao12345666333/vim/master/vimrc -O $HOME/.vimrc`
