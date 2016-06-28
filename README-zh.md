@@ -416,5 +416,3 @@ let g:instant_markdown_autostart = 0
 完备的Python支持, 可以自动识别当前是系统环境或虚拟环境, 使用`:Isort`可智能对导入包进行排序, 使用`:PymodeLintAuto`可自动格式化.
 
 **除了上述列出的功能以外, 还有很多方便的特性，可以大大提升效率，在使用中慢慢体会吧！有问题可以在[tao12345666333/vim](https://github.com/tao12345666333/vim) on github 提issue**
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tao12345666333/vim/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

@@ -156,6 +156,3 @@ When you save files, it will check syntax automatically, and display syntax erro
 |       `\e`            |     list syntax errors     |
 
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tao12345666333/vim/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
