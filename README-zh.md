@@ -123,6 +123,9 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 " show list of errors and warnings on the current file
 nmap <leader>e :Errors<CR>
+" turn to next or previous errors, after open errors list
+nmap <leader>n :lnext<CR>
+nmap <leader>p :lprevious<CR>
 " check also when just opened the file
 let g:syntastic_check_on_open = 1
 " syntastic checker for javascript.
