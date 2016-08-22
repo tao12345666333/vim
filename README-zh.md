@@ -14,6 +14,14 @@
 
     `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
 
+* **依赖**(RedHat/CentOS 平台)
+
+    CentOS 6.7的yum源自带的Python版本较旧，推荐自行安装Python2.7.
+
+    `sudo yum install python vim ctags git`
+
+    `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
+
 * **依赖**(Mac OS 平台)
 
     `brew install python vim git`

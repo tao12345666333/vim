@@ -16,6 +16,14 @@
 
     `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
 
+* **Dependencies**(RedHat/CentOS platform)
+
+    The CentOS 6.7's default Python is 2.6, it's recommend to install Python2.7.
+
+    `sudo yum install python vim ctags git`
+
+    `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
+
 * **Dependencies**(Mac OS platform)
 
     `brew install python vim git`
