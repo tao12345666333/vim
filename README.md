@@ -165,5 +165,5 @@ When you save files, it will check syntax automatically, and display syntax erro
 |   shortcut key        |    description             |
 |-----------------------|:--------------------------:|
 |       `\e`            |     list syntax errors     |
-
-
+|       `\n`            |     turn to next error     |
+|       `\p`            |     turn to previous error |

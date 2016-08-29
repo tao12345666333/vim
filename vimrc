@@ -92,16 +92,6 @@ Plugin 'lilydjwg/colorizer'
 " to avoid that)
 " Plugin 'myusuf3/numbers.vim'
 
-" Plugins from vim-scripts repos:
-
-" Search results counter
-Plugin 'IndexedSearch'
-" XML/HTML tags navigation
-Plugin 'matchit.zip'
-" Gvim colorscheme
-Plugin 'Wombat'
-" Yank history navigation
-Plugin 'YankRing.vim'
 " javascript complete after install the plugin, you must cd the install
 " directory and run `npm install`, then add a .tern-project config file
 " the doc at http://ternjs.net/doc/manual.html#vim
@@ -121,6 +111,19 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'mustache/vim-mustache-handlebars'
 " Vue.js syntax and highlighting
 Plugin 'tao12345666333/vim-vue'
+" True Sublime Text style multiple selections for Vim
+Plugin 'terryma/vim-multiple-cursors'
+
+" Plugins from vim-scripts repos:
+
+" Search results counter
+Plugin 'IndexedSearch'
+" XML/HTML tags navigation
+Plugin 'matchit.zip'
+" Gvim colorscheme
+Plugin 'Wombat'
+" Yank history navigation
+Plugin 'YankRing.vim'
 
 " ============================================================================
 " Install plugins the first time vim runs
