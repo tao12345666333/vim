@@ -1,74 +1,292 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Vim by tao12345666333</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Vim</h1>
-      <h2 class="project-tagline">my vimrc</h2>
-      <a href="https://github.com/tao12345666333/vim" class="btn">View on GitHub</a>
-      <a href="https://github.com/tao12345666333/vim/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/tao12345666333/vim/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <section class="main-content">
-      <h2>
-<a id="my-vim-setting" class="anchor" href="#my-vim-setting" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://tao12345666333.github.com/vim">My Vim setting</a>
-</h2>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Vim by tao12345666333</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Vim</h1>
+        <h2>My Vim configuration more Python, Javascript, Vue.js, Golang and Markdown, will add Haskell, Ruby and C/C++</h2>
+        <a href="https://github.com/tao12345666333/vim" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="my-vim-setting" class="anchor" href="#my-vim-setting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://tao12345666333.github.com/vim">My Vim setting</a>
+</h1>
 
 <p><a href="https://travis-ci.org/tao12345666333/vim"><img src="https://travis-ci.org/tao12345666333/vim.png" alt="Build Status"></a></p>
 
-<h3>
-<a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span class="octicon octicon-link"></span></a>screenshot</h3>
+<h2>
+<a id="中文说明" class="anchor" href="#%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://github.com/tao12345666333/vim/blob/master/README-zh.md">中文说明</a>
+</h2>
+
+<h2>
+<a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>screenshot</h2>
 
 <p><img src="https://raw.githubusercontent.com/tao12345666333/vim/master/screenshot.png" alt="screenshot.png"></p>
 
-<h3>
-<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h3>
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
 
 <p>(You need a vim compiled with python support. Check it with <code>vim --version | grep +python</code>)</p>
 
 <ul>
 <li>
-<p><strong>Dependencies</strong>(Ubuntu platform)</p>
+<p><strong>Dependencies</strong>(Debian/Ubuntu platform)</p>
 
-<p><code>sudo apt-get install vim exuberant-ctags git</code></p>
+<p><code>sudo apt-get install python vim exuberant-ctags git</code></p>
+
+<p><code>sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort</code></p>
+</li>
+<li>
+<p><strong>Dependencies</strong>(RedHat/CentOS platform)</p>
+
+<p>The CentOS 6.7's default Python is 2.6, it's recommend to install Python2.7.</p>
+
+<p><code>sudo yum install python vim ctags git</code></p>
+
+<p><code>sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort</code></p>
+</li>
+<li>
+<p><strong>Dependencies</strong>(Mac OS platform)</p>
+
+<p><code>brew install python vim git</code></p>
+
+<p><code>wget http://tenet.dl.sourceforge.net/project/ctags/ctags/5.8/ctags-5.8.tar.gz &amp;&amp; tar -zxvf ctags-5.8.tar.gz &amp;&amp; cd ctags-5.8 &amp;&amp; ./configure &amp;&amp; make &amp;&amp; sudo make install</code></p>
 
 <p><code>sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort</code></p>
 </li>
 <li>
 <p><strong>Download vimrc file to user home directory</strong></p>
 
-<p><code>wget https://raw.githubusercontent.com/tao12345666333/vim/master/.vimrc -O $HOME/.vimrc</code></p>
+<p><code>wget https://raw.githubusercontent.com/tao12345666333/vim/master/vimrc -O $HOME/.vimrc</code></p>
 </li>
 <li>
 <p><strong>Open Vim</strong></p>
 
-<p>Open vim, it will install plugins. Wait for the installation to finish.Or you can run</p>
+<p>Open vim, it will install plugins automatically. Wait for the installation to finish.
+Or you can run</p>
 
 <p><code>vim -E -u $HOME/.vimrc +qall</code></p>
 </li>
-
-<li><p><strong>Enjoy your Vim and costomize it.</strong></p></li>
-
-<li><p>My vim setting is fork from fisadev/fisa-vim-config</p></li>
-
+<li><p><strong>Enjoy your Vim and costomize it</strong></p></li>
 </ul>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/tao12345666333/vim">Vim</a> is maintained by <a href="https://github.com/tao12345666333">tao12345666333</a>.</span>
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+<h3>
+<a id="plugin-managevundle" class="anchor" href="#plugin-managevundle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plugin Manage(Vundle)</h3>
 
-    </section>
+<p>In this configuration，I use <a href="https://github.com/VundleVim/Vundle.vim"><strong>Vundle</strong></a> as plugins manager. Vundle will auto manage the <code>.vim</code> directory，all plugins which has benn configured will be download to <code>~/.vim/bundle/</code> by default, please keep the <code>.vim</code> directory clean before use it. When Vundle install plugins will trigger <code>git clone</code> opration，the search opration need <code>curl</code> .</p>
+
+<h4>
+<a id="configurationone-part" class="anchor" href="#configurationone-part" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration(one part)</h4>
+
+<div class="highlight highlight-source-viml"><pre><span class="pl-c">" let Vundle manage Vundle</span>
+Bundle <span class="pl-s">'gmarik/vundle'</span>
+
+<span class="pl-c">" ============================================================================</span>
+<span class="pl-c">" Active plugins</span>
+<span class="pl-c">" You can disable or add new ones here:</span>
+
+<span class="pl-c">" Plugins from github repos:</span>
+
+<span class="pl-c">" Python and PHP Debugger</span>
+Bundle <span class="pl-s">'fisadev/vim-debug.vim'</span>
+<span class="pl-c">" Better file browser</span>
+Bundle <span class="pl-s">'scrooloose/nerdtree'</span>
+<span class="pl-c">" Code commenter</span>
+Bundle <span class="pl-s">'scrooloose/nerdcommenter'</span>
+<span class="pl-c">" Class/module browser</span>
+Bundle <span class="pl-s">'majutsushi/tagbar'</span>
+<span class="pl-c">" Code and files fuzzy finder</span>
+Bundle <span class="pl-s">'kien/ctrlp.vim'</span>
+<span class="pl-c">" Extension to ctrlp, for fuzzy command finder</span>
+Bundle <span class="pl-s">'fisadev/vim-ctrlp-cmdpalette'</span>
+<span class="pl-c">" Zen coding</span>
+Bundle <span class="pl-s">'mattn/emmet-vim'</span>
+<span class="pl-c">" Git integration</span>
+Bundle <span class="pl-s">'motemen/git-vim'</span>
+<span class="pl-c">" Tab list panel</span>
+Bundle <span class="pl-s">'kien/tabman.vim'</span>
+</pre></div>
+
+<h4>
+<a id="support-opration" class="anchor" href="#support-opration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support opration</h4>
+
+<table>
+<thead>
+<tr>
+<th>command</th>
+<th align="center">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:PluginList</td>
+<td align="center">list all Plugins</td>
+</tr>
+<tr>
+<td>:PluginInstall(!)</td>
+<td align="center">install/update Plugin</td>
+</tr>
+<tr>
+<td>:PluginSearch(!) foo</td>
+<td align="center">search Plugin about foo</td>
+</tr>
+<tr>
+<td>:PluginClean(!)</td>
+<td align="center">clean unused Plugins</td>
+</tr>
+<tr>
+<td>:PluginUpdate</td>
+<td align="center">update Plugins</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="project-file-browsernerdtree" class="anchor" href="#project-file-browsernerdtree" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project file browser（NERDTree）</h3>
+
+<p>In this configuration，I use <a href="https://github.com/scrooloose/nerdtree"><strong>NERDTree</strong></a> as file browser. The NERDTree allows you to explore your filesystem and to open files and directory. It also allows you to hide files or set bookmarks etc. In NERDTree window input <code>?</code> can get the opration guide. This configuration filters out <code>.pyc</code>, <code>.git</code>, <code>.hg</code>, <code>.svn</code> etc.</p>
+
+<h4>
+<a id="configuration" class="anchor" href="#configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration</h4>
+
+<div class="highlight highlight-source-viml"><pre><span class="pl-c">" auto open or close NERDTree</span>
+<span class="pl-c1">autocmd</span> vimenter <span class="pl-k">*</span> <span class="pl-k">if</span> !<span class="pl-c1">argc</span>() | NERDTree | <span class="pl-k">endif</span>
+<span class="pl-c1">autocmd</span> bufenter <span class="pl-k">*</span> <span class="pl-k">if</span> (<span class="pl-c1">winnr</span>(<span class="pl-s">"$"</span>) <span class="pl-k">==</span> <span class="pl-c1">1</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-c1">exists</span>(<span class="pl-s">"b:NERDTreeType"</span>) <span class="pl-k">&amp;&amp;</span> <span class="pl-smi">b:NERDTreeType</span> <span class="pl-k">==</span> <span class="pl-s">"primary"</span>) | q | <span class="pl-k">endif</span>
+
+<span class="pl-c">" NERDTree -----------------------------</span>
+
+<span class="pl-c">" toggle nerdtree display</span>
+<span class="pl-c1">map</span> <span class="pl-c1">&lt;F3&gt;</span> :NERDTreeToggle<span class="pl-c1">&lt;CR&gt;</span>
+<span class="pl-c">" open nerdtree with the current file selected</span>
+<span class="pl-c1">nmap</span> ,t :NERDTreeFind<span class="pl-c1">&lt;CR&gt;</span>
+<span class="pl-c">" don;t show these file types</span>
+<span class="pl-c1">let</span> NERDTreeIgnore = [<span class="pl-s">'\.pyc$'</span>, <span class="pl-s">'\.pyo$'</span>]</pre></div>
+
+<h4>
+<a id="support-opration-1" class="anchor" href="#support-opration-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support opration</h4>
+
+<table>
+<thead>
+<tr>
+<th>shortcut key</th>
+<th align="center">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F3</td>
+<td align="center">open/close NERDTree</td>
+</tr>
+<tr>
+<td>,t</td>
+<td align="center">open NERDTree and select current file</td>
+</tr>
+</tbody>
+</table>
+
+<h3>
+<a id="syntax-checking" class="anchor" href="#syntax-checking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Syntax checking</h3>
+
+<p>In this configuration，I use <a href="https://github.com/scrooloose/syntastic"><strong>Syntastic</strong></a> plugin for syntax checking. Support <code>C/C++/Go/Python/Haskell/Ruby/JavaScript</code> etc. For JavaScript, I use <code>eslint</code> as checker, so it can check ES6 and JSX etc. You can see <a href="http://moelove.info/2015/11/28/JSLint-JSHint-ESLint%E5%AF%B9%E6%AF%94%E5%92%8CVim%E9%85%8D%E7%BD%AE/">JSLint, JSHint和ESLint的对比及Vim配置</a> for more details, when you want to change checker tools, just modify a little setting.</p>
+
+<h4>
+<a id="configuration-1" class="anchor" href="#configuration-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration</h4>
+
+<div class="highlight highlight-source-viml"><pre><span class="pl-c">" Syntastic ------------------------------</span>
+
+<span class="pl-c">" show list of errors and warnings on the current file</span>
+<span class="pl-c1">nmap</span> <span class="pl-c1">&lt;leader&gt;</span>e :Errors<span class="pl-c1">&lt;CR&gt;</span>
+<span class="pl-c">" turn to next or previous errors, after open errors list</span>
+<span class="pl-c1">nmap</span> <span class="pl-c1">&lt;leader&gt;</span>n :lnext<span class="pl-c1">&lt;CR&gt;</span>
+<span class="pl-c1">nmap</span> <span class="pl-c1">&lt;leader&gt;</span>p :lprevious<span class="pl-c1">&lt;CR&gt;</span>
+<span class="pl-c">" check also when just opened the file</span>
+<span class="pl-c1">let</span> <span class="pl-smi">g:syntastic_check_on_open</span> = <span class="pl-c1">1</span>
+<span class="pl-c">" syntastic checker for javascript.</span>
+<span class="pl-c">" eslint is the only tool support JSX.</span>
+<span class="pl-c">" If you don't need write JSX, you can use jshint.</span>
+<span class="pl-c">" And eslint is slow, but not a hindrance</span>
+<span class="pl-c">" let g:syntastic_javascript_checkers = ['jshint']</span>
+<span class="pl-c1">let</span> <span class="pl-smi">g:syntastic_javascript_checkers</span> = [<span class="pl-s">'eslint'</span>]
+<span class="pl-c">" don't put icons on the sign column (it hides the vcs status icons of signify)</span>
+<span class="pl-c1">let</span> <span class="pl-smi">g:syntastic_enable_signs</span> = <span class="pl-c1">0</span>
+<span class="pl-c">" custom icons (enable them if you use a patched font, and enable the previous </span>
+<span class="pl-c">" setting)</span>
+<span class="pl-c1">let</span> <span class="pl-smi">g:syntastic_error_symbol</span> = <span class="pl-s">'✗'</span>
+<span class="pl-c1">let</span> <span class="pl-smi">g:syntastic_warning_symbol</span> = <span class="pl-s">'⚠'</span>
+<span class="pl-c1">let</span> <span class="pl-smi">g:syntastic_style_error_symbol</span> = <span class="pl-s">'✗'</span>
+<span class="pl-c1">let</span> <span class="pl-smi">g:syntastic_style_warning_symbol</span> = <span class="pl-s">'⚠'</span></pre></div>
+
+<h4>
+<a id="features-1" class="anchor" href="#features-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h4>
+
+<p>When you save files, it will check syntax automatically, and display syntax errors.</p>
+
+<h4>
+<a id="support-opration-2" class="anchor" href="#support-opration-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support opration</h4>
+
+<table>
+<thead>
+<tr>
+<th>shortcut key</th>
+<th align="center">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\e</code></td>
+<td align="center">list syntax errors</td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td align="center">turn to next error</td>
+</tr>
+<tr>
+<td><code>\p</code></td>
+<td align="center">turn to previous error</td>
+</tr>
+</tbody>
+</table>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/tao12345666333/vim/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/tao12345666333/vim/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/tao12345666333/vim"></a> is maintained by <a href="https://github.com/tao12345666333">tao12345666333</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
             <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
