@@ -1,3 +1,10 @@
+scriptencoding utf-8
+" ============================================================================
+" Author: TaoBeier
+" Blog: http://moelove.info
+" Version: v1.1.0
+" Update Time: 2016-09-25
+
 " ============================================================================
 " Vundle initialization
 " Avoid modify this section, unless you are very sure of what you are doing
