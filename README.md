@@ -55,7 +55,7 @@ In this configuration，I use [**Vundle**](https://github.com/VundleVim/Vundle.v
 
 ```vim
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " ============================================================================
 " Active plugins
@@ -64,23 +64,23 @@ Bundle 'gmarik/vundle'
 " Plugins from github repos:
 
 " Python and PHP Debugger
-Bundle 'fisadev/vim-debug.vim'
+Plugin 'fisadev/vim-debug.vim'
 " Better file browser
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " Code commenter
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 " Class/module browser
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 " Code and files fuzzy finder
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
-Bundle 'fisadev/vim-ctrlp-cmdpalette'
+Plugin 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
-Bundle 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 " Git integration
-Bundle 'motemen/git-vim'
+Plugin 'motemen/git-vim'
 " Tab list panel
-Bundle 'kien/tabman.vim'
+Plugin 'kien/tabman.vim'
 
 ```
 
