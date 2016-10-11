@@ -12,7 +12,7 @@
 
     `sudo apt-get install python vim exuberant-ctags git`
 
-    `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
+    `sudo pip install dbgp pep8 flake8 pyflakes isort`
 
 * **依赖**(RedHat/CentOS 平台)
 
@@ -20,7 +20,7 @@
 
     `sudo yum install python vim ctags git`
 
-    `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
+    `sudo pip install dbgp pep8 flake8 pyflakes isort`
 
 * **依赖**(Mac OS 平台)
 
@@ -28,7 +28,7 @@
 
     `wget http://tenet.dl.sourceforge.net/project/ctags/ctags/5.8/ctags-5.8.tar.gz && tar -zxvf ctags-5.8.tar.gz && cd ctags-5.8 && ./configure && make && sudo make install`
 
-    `sudo pip install dbgp vim-debug pep8 flake8 pyflakes isort`
+    `sudo pip install dbgp pep8 flake8 pyflakes isort`
 
 * **下载vimrc 文件到用户主目录**
 
@@ -60,8 +60,6 @@ Plugin 'gmarik/vundle'
 
 " Plugins from github repos:
 
-" Python and PHP Debugger
-Plugin 'fisadev/vim-debug.vim'
 " Better file browser
 Plugin 'scrooloose/nerdtree'
 " Code commenter
