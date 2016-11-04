@@ -204,7 +204,7 @@ highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
 
 ### Tag支持
 
-在这份配置中，使用了[**Tagbar**](http://github.com/godlygeek/tagbar)做Tag支持，可以显示当前文件中定义的类/变量等.
+在这份配置中，使用了[**Tagbar**](http://github.com/majutsushi/tagbar)做Tag支持，可以显示当前文件中定义的类/变量等.
 
 #### 配置
 
