@@ -118,6 +118,9 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tao12345666333/vim-vue'
 " True Sublime Text style multiple selections for Vim
 Plugin 'terryma/vim-multiple-cursors'
+" Modern database interface for Vim
+Plugin 'tpope/vim-db'
+
 
 " Plugins from vim-scripts repos:
 
