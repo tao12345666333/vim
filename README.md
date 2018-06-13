@@ -7,6 +7,10 @@
 
 ![screenshot.png](screenshot.png)
 
+## Stargazers over time
+
+[![Stargazers over time](https://starcharts.herokuapp.com/tao12345666333/vim.svg)](https://starcharts.herokuapp.com/tao12345666333/vim)
+
 ## Install
 (You need a vim compiled with python support. Check it with `vim --version | grep +python`)
 

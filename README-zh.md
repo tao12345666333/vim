@@ -5,6 +5,10 @@
 
 ![screenshot.png](screenshot.png)
 
+## Stargazers over time
+
+[![Stargazers over time](https://starcharts.herokuapp.com/tao12345666333/vim.svg)](https://starcharts.herokuapp.com/tao12345666333/vim)
+
 ## 安装
 (你需要一个有Python支持的Vim版本. 请使用 `vim --version | grep +python` 来检查)
 
