@@ -2,8 +2,8 @@ scriptencoding utf-8
 " ============================================================================
 " Author: TaoBeier
 " Blog: http://moelove.info
-" Version: v1.1.0
-" Update Time: 2016-09-25
+" Version: v18.08.0
+" Update Time: 2018-08-04
 
 " ============================================================================
 " Vundle initialization
@@ -29,7 +29,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Plugins
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " ============================================================================
 " Active plugins
@@ -44,14 +44,14 @@ Plugin 'scrooloose/nerdcommenter'
 " Class/module browser
 Plugin 'majutsushi/tagbar'
 " Code and files fuzzy finder
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 " Extension to ctrlp, for fuzzy command finder
 Plugin 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
 Plugin 'mattn/emmet-vim'
-" Maybe the best Git integration
+" A Git wrapper so awesome
 Plugin 'tpope/vim-fugitive'
-" Tab list panel
+" Tab management for Vim
 Plugin 'kien/tabman.vim'
 " Airline
 Plugin 'vim-airline/vim-airline'
@@ -87,20 +87,17 @@ Plugin 'fisadev/dragvisuals.vim'
 " Window chooser
 Plugin 't9md/vim-choosewin'
 " Python and other languages code checker
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
 " Paint css colors with the real color
 Plugin 'lilydjwg/colorizer'
 " Relative numbering of lines (0 is the current line)
-" (disabled by default because is very intrusive and can't be easily toggled
-" on/off. When the plugin is present, will always activate the relative 
-" numbering every time you go to normal mode. Author refuses to add a setting 
-" to avoid that)
+" Require Vim 7.3+
 " Plugin 'myusuf3/numbers.vim'
 
 " javascript complete after install the plugin, you must cd the install
 " directory and run `npm install`, then add a .tern-project config file
 " the doc at http://ternjs.net/doc/manual.html#vim
-Plugin 'marijnh/tern_for_vim'
+Plugin 'ternjs/tern_for_vim'
 " Golang Plugins
 Plugin 'fatih/vim-go'
 " JSX syntax highlight.
@@ -119,7 +116,7 @@ Plugin 'tao12345666333/vim-vue'
 " True Sublime Text style multiple selections for Vim
 Plugin 'terryma/vim-multiple-cursors'
 " Modern database interface for Vim
-Plugin 'tpope/vim-db'
+Plugin 'tpope/vim-dadbod'
 
 
 " Plugins from vim-scripts repos:
