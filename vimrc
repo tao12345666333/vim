@@ -117,7 +117,8 @@ Plugin 'tao12345666333/vim-vue'
 Plugin 'terryma/vim-multiple-cursors'
 " Modern database interface for Vim
 Plugin 'tpope/vim-dadbod'
-
+" Dockerfile support
+Plugin 'ekalinin/Dockerfile.vim'
 
 " Plugins from vim-scripts repos:
 
