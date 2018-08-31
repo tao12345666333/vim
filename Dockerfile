@@ -28,7 +28,7 @@ RUN git clone https://github.com/vim/vim.git \
     && make \
     && make install \
     && wget --no-check-certificate https://raw.githubusercontent.com/tao12345666333/vim/master/vimrc -O $HOME/.vimrc \
-    && vim -E -u $HOME/.vimrc +qall \
+    && vim -E -u $HOME/.vimrc +qall
     #    && find  $HOME/.vim/bundle/ -type d -name '.git' -exec rm -rf {} \;
 
 
