@@ -11,6 +11,14 @@
 
 [![Stargazers over time](https://starcharts.herokuapp.com/tao12345666333/vim.svg)](https://starcharts.herokuapp.com/tao12345666333/vim)
 
+## Try it
+
+You can use Docker to try it.
+
+```
+sudo docker run -it --rm taobeier/vim 
+```
+
 ## Install
 (You need a vim compiled with python support. Check it with `vim --version | grep +python`)
 
