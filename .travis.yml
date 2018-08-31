@@ -1,14 +1,22 @@
-language: generic
+language: bash
+services: docker
 
 env:
-  - HEAD=yes
-  - HEAD=no
-
-sudo: true 
+  - VARIANT=stretch/slim
 
 before_install:
-  - sudo apt-get install -y vim git python exuberant-ctags
-  - sudo pip install pep8 flake8 pyflakes isort
+  - env | sort
+  - slash='/'; image="vim:${VARIANT//$slash/-}"
 
-install:
-  - bash install.sh
+script:
+  - |
+    (
+      set -Eeuo pipefail
+      set -x
+      docker build -t "$image" .
+    )
+
+after_script:
+  - docker images
+
+# vim:set et ts=2 sw=2:
