@@ -2,8 +2,8 @@ scriptencoding utf-8
 " ============================================================================
 " Author: TaoBeier
 " Blog: http://moelove.info
-" Version: v18.08.0
-" Update Time: 2018-08-04
+" Version: v18.09.0
+" Update Time: 2018-09-01
 
 " ============================================================================
 " Vundle initialization
