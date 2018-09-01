@@ -3,7 +3,7 @@
 
 ## 截图
 
-![screenshot.png](screenshot.png)
+![screenshot.png](https://raw.githubusercontent.com/tao12345666333/vim/master/screenshot.png)
 
 ## Stargazers over time
 
