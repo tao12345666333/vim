@@ -7,20 +7,30 @@ services:
 
 variables:
   DOCKER_DRIVER: overlay2
-  IMAGE_TAG: $CI_REGISTRY/$CI_PROJECT_PATH:$CI_COMMIT_REF_SLUG
+  IMAGE_NAME: $CI_REGISTRY/$CI_PROJECT_PATH
 
 stages:
-  - build-image
+  - build-latest
+  - build-normal
 
 before_script:
   - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
 
-build-image:
-  stage: build-image
+build-latest:
+  stage: build-latest
   script:
-    - docker build -t $IMAGE_TAG .
+    - docker build -t "$IMAGE_NAME:latest" .
     - docker images
-    - docker push $IMAGE_TAG
+    - docker push "$IMAGE_NAME:latest"
+  only:
+    - master
+
+build-normal:
+  stage: build-normal
+  script:
+    - docker build -t "$IMAGE_NAME:$CI_COMMIT_REF_SLUG" .
+    - docker images
+    - docker push "$IMAGE_NAME:$CI_COMMIT_REF_SLUG"
 
 after_script:
   - docker logout $CI_REGISTRY
