@@ -17,3 +17,6 @@ build-image:
     - docker build -t "$CI_REGISTRY/$CI_PROJECT_PATH:$CI_COMMIT_REF_SLUG" .
     - docker images
     - docker push "$CI_REGISTRY/$CI_PROJECT_PATH:$CI_COMMIT_REF_SLUG"
+
+after_script:
+  - docker logout $CI_REGISTRY
