@@ -1,5 +1,8 @@
 # [我的Vim配置](http://tao12345666333.github.com/vim)
 [![Build Status](https://travis-ci.org/tao12345666333/vim.png)](https://travis-ci.org/tao12345666333/vim)
+[![pipeline status](https://gitlab.com/taobeier/vim/badges/master/pipeline.svg)](https://gitlab.com/taobeier/vim/commits/master)
+[![Docker Build Status](https://img.shields.io/docker/build/taobeier/vim.svg)](https://hub.docker.com/r/taobeier/vim/)
+
 
 ## 截图
 
