@@ -1,5 +1,6 @@
 # [My Vim setting](http://tao12345666333.github.com/vim)
 [![Build Status](https://travis-ci.org/tao12345666333/vim.png)](https://travis-ci.org/tao12345666333/vim)
+[![pipeline status](https://gitlab.com/taobeier/vim/badges/master/pipeline.svg)](https://gitlab.com/taobeier/vim/commits/master)
 
 ## [中文说明](README-zh.md)
 
@@ -17,6 +18,12 @@ You can use Docker to try it.
 
 ```
 sudo docker run -it --rm taobeier/vim 
+```
+
+Or use the GitLab registry, **where the image is automatically built weekly and all dependent packages are updated**.
+
+```
+sudo docker run -it --rm registry.gitlab.com/taobeier/vim
 ```
 
 ## Install

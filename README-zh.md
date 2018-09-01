@@ -17,6 +17,12 @@
 sudo docker run -it --rm taobeier/vim 
 ```
 
+或者使用 GitLab 镜像源， **这里的镜像每周自动构建，会更新所有依赖的包。**
+
+```
+sudo docker run -it --rm registry.gitlab.com/taobeier/vim
+```
+
 ## 安装
 (你需要一个有Python支持的Vim版本. 请使用 `vim --version | grep +python` 来检查)
 
