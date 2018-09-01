@@ -1,0 +1,15 @@
+# Using GitLab CI for GitHub repo.
+# Author: Jintao Zhang <zhangjintao9020@gmail.com>
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build-image
+
+build-image:
+  stage: build-image
+  script:
+    - docker build -t "$CI_PROJECT_PATH:$CI_COMMIT_REF_SLUG" .
+    - docker images
