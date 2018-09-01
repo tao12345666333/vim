@@ -5,18 +5,22 @@ image: docker:latest
 services:
   - docker:dind
 
+variables:
+  DOCKER_DRIVER: overlay2
+  IMAGE_TAG: $CI_REGISTRY/$CI_PROJECT_PATH:$CI_COMMIT_REF_SLUG
+
 stages:
   - build-image
 
 before_script:
-  - docker login -u "$CI_DEPLOY_USER" -p "$CI_DEPLOY_PASSWORD" $CI_REGISTRY
+  - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
 
 build-image:
   stage: build-image
   script:
-    - docker build -t "$CI_REGISTRY/$CI_PROJECT_PATH:$CI_COMMIT_REF_SLUG" .
+    - docker build -t $IMAGE_TAG .
     - docker images
-    - docker push "$CI_REGISTRY/$CI_PROJECT_PATH:$CI_COMMIT_REF_SLUG"
+    - docker push $IMAGE_TAG
 
 after_script:
   - docker logout $CI_REGISTRY
