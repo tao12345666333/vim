@@ -19,13 +19,13 @@
 You can use Docker to try it.
 
 ```
-sudo docker run -it --rm taobeier/vim 
+sudo docker run -it -v $PWD:/src --rm taobeier/vim
 ```
 
 Or use the GitLab registry, **where the image is automatically built weekly and all dependent packages are updated**.
 
 ```
-sudo docker run -it --rm registry.gitlab.com/taobeier/vim
+sudo docker run -it -v $PWD:/src --rm registry.gitlab.com/taobeier/vim
 ```
 
 ## Install

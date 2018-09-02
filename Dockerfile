@@ -39,7 +39,7 @@ COPY --from=builder /usr/local/share/vim/ /usr/local/share/vim/
 COPY --from=builder /root/.vimrc /root/.vimrc
 COPY --from=builder /root/.vim /root/.vim
 # we don't need man page
-#
+
 RUN apt update && apt install -y --no-install-recommends \
         python \
         python-dev \
@@ -48,5 +48,7 @@ RUN apt update && apt install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && pip install pep8 flake8 pyflakes isort
 
+WORKDIR /src
 
-CMD ["vim"]
+ENTRYPOINT [ "vim" ]
+CMD [ "--help" ]

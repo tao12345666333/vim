@@ -17,13 +17,13 @@
 你可以使用 Docker 来试用它。
 
 ```
-sudo docker run -it --rm taobeier/vim 
+sudo docker run -it -v $PWD:/src --rm taobeier/vim
 ```
 
 或者使用 GitLab 镜像源， **这里的镜像每周自动构建，会更新所有依赖的包。**
 
 ```
-sudo docker run -it --rm registry.gitlab.com/taobeier/vim
+sudo docker run -it -v $PWD:/src --rm registry.gitlab.com/taobeier/vim
 ```
 
 ## 安装
