@@ -1,6 +1,6 @@
 FROM debian:stretch-slim as builder
 
-MAINTAINER Jintao Zhang <zhangjintao9020@gmail.com>
+LABEL maintainer="Jintao Zhang <zhangjintao9020@gmail.com>"
 
 RUN apt update && apt install -y --no-install-recommends \
         ca-certificates \
