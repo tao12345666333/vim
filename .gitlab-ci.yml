@@ -16,21 +16,26 @@ stages:
 before_script:
   - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
 
+.build_template: &build_definition
+  script:
+    - IMAGE_TAG=$CI_COMMIT_REF_SLUG
+    - '[[ $CI_COMMIT_REF_SLUG = master ]] && IMAGE_TAG=latest || IMAGE_TAG=$CI_COMMIT_REF_SLUG'
+    - docker build -t "$IMAGE_NAME:$IMAGE_TAG" .
+    - docker images
+    - docker push "$IMAGE_NAME:$IMAGE_TAG"
+
+
 build-latest:
   stage: build-latest
-  script:
-    - docker build -t "$IMAGE_NAME:latest" .
-    - docker images
-    - docker push "$IMAGE_NAME:latest"
+  <<: *build_definition
   only:
     - master
 
 build-normal:
   stage: build-normal
-  script:
-    - docker build -t "$IMAGE_NAME:$CI_COMMIT_REF_SLUG" .
-    - docker images
-    - docker push "$IMAGE_NAME:$CI_COMMIT_REF_SLUG"
+  <<: *build_definition
+  except:
+    - master
 
 after_script:
   - docker logout $CI_REGISTRY
