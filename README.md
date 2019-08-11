@@ -59,7 +59,7 @@ sudo docker run -it -v $PWD:/src --rm registry.gitlab.com/taobeier/vim
 
 * **Open Vim**
 
-    Open vim, it will install plugins automatically. Wait for the installation to finish.
+    Open vim, it will install plugins automatically. Wait for the installation to be finished.
     Or you can run
 
     `vim -E -u $HOME/.vimrc +qall`
@@ -70,7 +70,7 @@ sudo docker run -it -v $PWD:/src --rm registry.gitlab.com/taobeier/vim
 
 ### Plugin Manage(Vundle)
 
-In this configuration，I use [**Vundle**](https://github.com/VundleVim/Vundle.vim) as plugins manager. Vundle will auto manage the `.vim` directory，all plugins which has benn configured will be download to `~/.vim/bundle/` by default, please keep the `.vim` directory clean before use it. When Vundle install plugins will trigger `git clone` opration，the search opration need `curl` .
+In this configuration，I use [**Vundle**](https://github.com/VundleVim/Vundle.vim) as plugins manager. Vundle will auto manage the `.vim` directory，all plugins which has been configured will be downloaded to `~/.vim/bundle/` by default, please keep the `.vim` directory clean before use it. When Vundle installing plugins `git clone` operation will be triggered，the search operation need `curl` .
 
 #### Configuration(one part)
 
@@ -103,7 +103,7 @@ Plugin 'kien/tabman.vim'
 
 ```
 
-#### Support opration
+#### Supported operations
 
 |   command             |    description        |
 |-----------------------|:---------------------:|
@@ -116,7 +116,7 @@ Plugin 'kien/tabman.vim'
 
 ### Project file browser（NERDTree）
 
-In this configuration，I use [**NERDTree**](https://github.com/scrooloose/nerdtree) as file browser. The NERDTree allows you to explore your filesystem and to open files and directory. It also allows you to hide files or set bookmarks etc. In NERDTree window input `?` can get the opration guide. This configuration filters out `.pyc`, `.git`, `.hg`, `.svn` etc.
+In this configuration，I use [**NERDTree**](https://github.com/scrooloose/nerdtree) as file browser. The NERDTree allows you to explore your filesystem and to open files and directory. It also allows you to hide files or set bookmarks etc. In NERDTree window input `?` can get the operation guide. This configuration filters out `.pyc`, `.git`, `.hg`, `.svn` etc.
 
 #### Configuration
 
@@ -135,7 +135,7 @@ nmap ,t :NERDTreeFind<CR>
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 ```
 
-#### Support opration
+#### Supported operation
 
 |  shortcut key         |    description             |
 |-----------------------|:--------------------------:|
@@ -179,7 +179,7 @@ let g:syntastic_style_warning_symbol = '⚠'
 
 When you save files, it will check syntax automatically, and display syntax errors.
 
-#### Support opration
+#### Supported operations
 
 |   shortcut key        |    description             |
 |-----------------------|:--------------------------:|
