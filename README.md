@@ -10,9 +10,9 @@
 
 ![screenshot.png](https://raw.githubusercontent.com/tao12345666333/vim/master/screenshot.png)
 
-## Stargazers over time
+## Star History
 
-[![Stargazers over time](https://starcharts.herokuapp.com/tao12345666333/vim.svg)](https://starcharts.herokuapp.com/tao12345666333/vim)
+[![Star History Chart](https://api.star-history.com/svg?repos=tao12345666333/vim&type=Date)](https://star-history.com/#tao12345666333/vim&Date)
 
 ## Try it
 
