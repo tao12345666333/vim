@@ -145,44 +145,8 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 ### Syntax checking
 
-In this configuration，I use [**Syntastic**](https://github.com/scrooloose/syntastic) plugin for syntax checking. Support `C/C++/Go/Python/Haskell/Ruby/JavaScript` etc. For JavaScript, I use `eslint` as checker, so it can check ES6 and JSX etc. You can see [JSLint, JSHint和ESLint的对比及Vim配置](http://moelove.info/2015/11/28/JSLint-JSHint-ESLint%E5%AF%B9%E6%AF%94%E5%92%8CVim%E9%85%8D%E7%BD%AE/) for more details, when you want to change checker tools, just modify a little setting.
-
-#### Configuration
-
-```vim
-" Syntastic ------------------------------
-
-" show list of errors and warnings on the current file
-nmap <leader>e :Errors<CR>
-" turn to next or previous errors, after open errors list
-nmap <leader>n :lnext<CR>
-nmap <leader>p :lprevious<CR>
-" check also when just opened the file
-let g:syntastic_check_on_open = 1
-" syntastic checker for javascript.
-" eslint is the only tool support JSX.
-" If you don't need write JSX, you can use jshint.
-" And eslint is slow, but not a hindrance
-" let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_javascript_checkers = ['eslint']
-" don't put icons on the sign column (it hides the vcs status icons of signify)
-let g:syntastic_enable_signs = 0
-" custom icons (enable them if you use a patched font, and enable the previous 
-" setting)
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_style_error_symbol = '✗'
-let g:syntastic_style_warning_symbol = '⚠'
-```
+In this configuration，I use [**Ale**](https://github.com/dense-analysis/ale) plugin for syntax checking. Support `C/C++/Go/Python/Haskell/Ruby/JavaScript` etc. For JavaScript, I use `eslint` as checker, so it can check ES6 and JSX etc. You can see [JSLint, JSHint和ESLint的对比及Vim配置](http://moelove.info/2015/11/28/JSLint-JSHint-ESLint%E5%AF%B9%E6%AF%94%E5%92%8CVim%E9%85%8D%E7%BD%AE/) for more details, when you want to change checker tools, just modify a little setting.
 
 #### Features
 
 When you save files, it will check syntax automatically, and display syntax errors.
-
-#### Supported operations
-
-|   shortcut key        |    description             |
-|-----------------------|:--------------------------:|
-|       `\e`            |     list syntax errors     |
-|       `\n`            |     turn to next error     |
-|       `\p`            |     turn to previous error |

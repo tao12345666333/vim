@@ -141,47 +141,12 @@ let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 
 ### 语法检查
-在这份配置中， 使用[**Syntastic**](https://github.com/scrooloose/syntastic)插件进行语法静态检查. 包括但不限于`C/C++/Go/Python/Haskell/Ruby/JavaScript`等. 在本配置中对JavaScript的静态检查使用`eslint`,可以支持ES6及JSX等, 细节可以参考[JSLint, JSHint和ESLint的对比及Vim配置](http://moelove.info/2015/11/28/JSLint-JSHint-ESLint%E5%AF%B9%E6%AF%94%E5%92%8CVim%E9%85%8D%E7%BD%AE/), 想要切换检查工具只要修改对应位置即可.
 
-#### 配置
-
-```vim
-" Syntastic ------------------------------
-
-" show list of errors and warnings on the current file
-nmap <leader>e :Errors<CR>
-" turn to next or previous errors, after open errors list
-nmap <leader>n :lnext<CR>
-nmap <leader>p :lprevious<CR>
-" check also when just opened the file
-let g:syntastic_check_on_open = 1
-" syntastic checker for javascript.
-" eslint is the only tool support JSX.
-" If you don't need write JSX, you can use jshint.
-" And eslint is slow, but not a hindrance
-" let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_javascript_checkers = ['eslint']
-" don't put icons on the sign column (it hides the vcs status icons of signify)
-let g:syntastic_enable_signs = 0
-" custom icons (enable them if you use a patched font, and enable the previous 
-" setting)
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_style_error_symbol = '✗'
-let g:syntastic_style_warning_symbol = '⚠'
-```
+在这份配置中， 使用[**Ale**](https://github.com/dense-analysis/ale)插件进行语法静态检查. 包括但不限于`C/C++/Go/Python/Haskell/Ruby/JavaScript`等. 在本配置中对JavaScript的静态检查使用`eslint`,可以支持ES6及JSX等, 细节可以参考[JSLint, JSHint和ESLint的对比及Vim配置](http://moelove.info/2015/11/28/JSLint-JSHint-ESLint%E5%AF%B9%E6%AF%94%E5%92%8CVim%E9%85%8D%E7%BD%AE/), 想要切换检查工具只要修改对应位置即可.
 
 #### 特性
 
 保存时自动进行语法静态检查，方便的错误提示及灵活的可扩展性.
-
-#### 支持操作
-
-|      快捷键           |         解释               |
-|-----------------------|:--------------------------:|
-|       `\e`            |    打开错误列表            |
-|       `\n`            |    移动到下一个错误位置    |
-|       `\p`            |    移动到上一个错误位置    |
 
 
 ### Git支持
