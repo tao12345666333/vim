@@ -1,9 +1,9 @@
 scriptencoding utf-8
 " ============================================================================
-" Author: TaoBeier
-" Blog: http://moelove.info
-" Version: v18.09.0
-" Update Time: 2018-09-01
+" Author: Jintao Zhang
+" Blog: https://moelove.info
+" Version: v25.04.0
+" Update Time: 2025-04-18
 
 " ============================================================================
 " Vundle initialization
@@ -86,8 +86,8 @@ Plugin 'fisadev/vim-isort'
 Plugin 'fisadev/dragvisuals.vim'
 " Window chooser
 Plugin 't9md/vim-choosewin'
-" Python and other languages code checker
-Plugin 'vim-syntastic/syntastic'
+" ALE (Asynchronous Lint Engine)
+Plugin 'dense-analysis/ale'
 " Paint css colors with the real color
 Plugin 'lilydjwg/colorizer'
 " Relative numbering of lines (0 is the current line)
@@ -351,31 +351,8 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.pyc$\|\.pyo$',
   \ }
 
-" Syntastic ------------------------------
+" ALE (Asynchronous Lint Engine) ------------------------------
 
-" show list of errors and warnings on the current file
-nmap <leader>e :Errors<CR>
-" turn to next or previous errors, after open errors list
-nmap <leader>n :lnext<CR>
-nmap <leader>p :lprevious<CR>
-" check also when just opened the file
-let g:syntastic_check_on_open = 1
-" syntastic checker for javascript.
-" eslint is the only tool support JSX.
-" If you don't need write JSX, you can use jshint.
-" And eslint is slow, but not a hindrance
-" let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_javascript_checkers = ['eslint']
-" don't put icons on the sign column (it hides the vcs status icons of signify)
-let g:syntastic_enable_signs = 0
-" custom icons (enable them if you use a patched font, and enable the previous 
-" setting)
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_style_error_symbol = '✗'
-let g:syntastic_style_warning_symbol = '⚠'
-let g:syntastic_quiet_messages = {
-    \ "regex":   'invalid-name\|missing-docstring'}
 
 " Python-mode ------------------------------
 
