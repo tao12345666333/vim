@@ -1,7 +1,5 @@
 # [我的Vim配置](http://tao12345666333.github.com/vim)
-[![Build Status](https://travis-ci.org/tao12345666333/vim.png)](https://travis-ci.org/tao12345666333/vim)
-[![pipeline status](https://gitlab.com/taobeier/vim/badges/master/pipeline.svg)](https://gitlab.com/taobeier/vim/commits/master)
-[![Docker Build Status](https://img.shields.io/docker/build/taobeier/vim.svg)](https://hub.docker.com/r/taobeier/vim/)
+[![Docker Build](https://github.com/tao12345666333/vim/actions/workflows/docker-build.yml/badge.svg)](https://github.com/tao12345666333/vim/actions/workflows/docker-build.yml)
 
 
 ## 截图
@@ -20,10 +18,10 @@
 sudo docker run -it -v $PWD:/src --rm taobeier/vim
 ```
 
-或者使用 GitLab 镜像源， **这里的镜像每周自动构建，会更新所有依赖的包。**
+或者使用 GitHub Container Registry：
 
 ```
-sudo docker run -it -v $PWD:/src --rm registry.gitlab.com/taobeier/vim
+sudo docker run -it -v $PWD:/src --rm ghcr.io/tao12345666333/vim
 ```
 
 ## 安装
@@ -220,7 +218,7 @@ let g:tagbar_autofocus = 1
 " NeoComplCache ------------------------------
 
 " most of them not documented because I'm not sure how they work
-" (docs aren't good, had to do a lot of trial and error to make 
+" (docs aren't good, had to do a lot of trial and error to make
 " it play nice)
 
 " Disable AutoComplPop.
