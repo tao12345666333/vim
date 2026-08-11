@@ -10,7 +10,7 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=tao12345666333/vim&type=Date)](https://star-history.com/#tao12345666333/vim&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=tao12345666333/vim&type=Date)](https://star-history.dera.page/#tao12345666333/vim&Date)
 
 ## Try it
 
